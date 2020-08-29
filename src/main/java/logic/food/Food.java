@@ -1,6 +1,6 @@
-package food;
+package logic.food;
 
-import board.Point;
+import logic.board.Point;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

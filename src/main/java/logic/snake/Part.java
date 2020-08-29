@@ -1,6 +1,6 @@
-package snake;
+package logic.snake;
 
-import board.Point;
+import logic.board.Point;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -27,5 +27,5 @@ public class Part {
         int x = currentPoint.getX();
         int y = currentPoint.getY() + length;
         currentPoint = new Point(x, y);
-    }
+    }   
 }

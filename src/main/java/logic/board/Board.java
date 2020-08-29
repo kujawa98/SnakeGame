@@ -1,8 +1,8 @@
-package board;
+package logic.board;
 
-import food.Food;
-import snake.Part;
-import snake.Snake;
+import logic.food.Food;
+import logic.snake.Part;
+import logic.snake.Snake;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,6 +14,9 @@ public class Board {
     private final Map<Point, Part> pointPartMap = new HashMap<>();
     private final Map<Point, Food> pointFoodMap = new HashMap<>();
 //    TODO: availablePoints będzie tworzona za każdym razem tylko i wyłącznie podczas losowania miejsca na jedzenie
+//    TODO: interfejs MapPuttable czy cos takiego dla food i part
+//    TODO: pakiet MapElement czy jakoś tak, umieścić w nim Part i Food implementujące interfejs MapElement czy coś
+
 
 
     public Board(Snake snake) {
@@ -44,9 +47,6 @@ public class Board {
         brd.putSnakeOnBoard(snake);
         System.out.println();
         brd.printPointPartMap();
-
-//        brd.printPointPartMap();
-//        TODO: cykl wygląda tak: map.reload -> snake.move i tak w koło Macieju
 
     }
 }

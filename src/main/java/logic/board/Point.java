@@ -1,4 +1,4 @@
-package board;
+package logic.board;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

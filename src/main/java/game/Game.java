@@ -1,10 +1,10 @@
 package game;
 
-import board.Board;
+import logic.board.Board;
 import io.InputHandler;
 import lombok.Getter;
-import snake.Directions;
-import snake.Snake;
+import logic.snake.Directions;
+import logic.snake.Snake;
 
 @Getter
 public final class Game {
@@ -13,11 +13,13 @@ public final class Game {
     private boolean isOver = false;
 
     private final InputHandler inputHandler;
+    private final StatusChecker statusChecker;
 
     public Game() {
         this.snake = new Snake();
         this.gameBoard = new Board(this.snake);
         this.inputHandler = new InputHandler();
+        this.statusChecker = new StatusChecker();
     }
 
     public void gameLoop() {

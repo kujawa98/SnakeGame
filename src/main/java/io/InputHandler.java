@@ -1,6 +1,6 @@
 package io;
 
-import snake.Directions;
+import logic.snake.Directions;
 
 import java.util.Scanner;
 

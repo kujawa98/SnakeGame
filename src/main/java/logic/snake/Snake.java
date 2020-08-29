@@ -1,6 +1,6 @@
-package snake;
+package logic.snake;
 
-import board.Point;
+import logic.board.Point;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
